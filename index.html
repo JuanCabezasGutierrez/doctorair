@@ -9,14 +9,14 @@
                 background-size:100% 100%;
                 background-attachment:fixed;
             }
-              
+            #index{
+                font-size:25px;
+                margin-top:200px;
+                text-align:center;
+                
+            } 
             
-           h2{
-                font-size:22px;
-                color:rgb(0, 0, 0);
-                margin-left:490px; 
-               font-family:monospace;
-            }
+           
             
             h1{
                 font-size:30px;
@@ -24,6 +24,12 @@
                 margin-left:415px;
                 font-family:monospace;
                }
+            h2{
+                font-size:22px;
+                color:rgb(0, 0, 0);
+                margin-left:490px; 
+               font-family:monospace;
+            }
             h3{
                 font-size: 28px;
                 font-family:monospace;
@@ -58,29 +64,39 @@
                 font-family:monospace;
             }
                 
-            #planes{
+            #actual{
                 font-size:18px;
                 text-align:center;
-                width:500px;
+                width:390px;
                 float: left; 
-                margin-left: 350px;
+                margin-left: 210px;
                 font-family:monospace;
          }
-           
-            #helicopters{
+            
+            #historical{
+               background-image:url("");
+                font-size:18px;
+                text-align:center;
+                width:390px;
+                float:left;
+                margin-left:165px;
+                font-family:monospace;
+           }
+            
+            #future{
                 
                 font-size:18px;
                 text-align:center;
-                width:500px;
+                width:390px;
                 float:right;
-                margin-right:350px; 
+                margin-right:165px; 
                 font-family:monospace;
             }
             img{
-                border-radius:15px;
-                margin-top:25px;
-                width: 350px;
-                height:200px;
+                border-radius:10px;
+                margin-top:15px;
+                width: 300px;
+                height:150px;
                 
             }
             
@@ -97,6 +113,14 @@
                 font-family:monospace;
             }
             </style>
+    <div id="index">
+        <a href="#whatis">1. Discover us.</a><br><br>
+        <a href="#fields">2. Our fields.</a><br><br>
+        <a href="#location">3. Our location.</a><br><br>
+             
+             </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     
     <div id="fightervideo">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/KnrRhSLZ0s8?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
@@ -106,7 +130,7 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Caon9BRk_gQ?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
         </div>
         
-        <h1>WHAT IS DR. AIR?</h1>
+        <h1 id="whatis"> WHAT IS DR. AIR?</h1>
         <h2>Future</h2>
         
         <div id="what"><hr>
@@ -120,20 +144,20 @@
         <h2>Professionals</h2>
          <div id="what"><hr>
         <p>We are a group of engineers and product developers with experience in large aviation companies such as Lockheed Martin, Airbus or Dassault with a common porpose in all of our  minds.</p><p> In these companies we have gathered the experience and knowledge necessary to develop what was our objective from the first moment, the construction of the most efficient aircraft in the world. </p><hr></div>    
-    <br><br><br><br><br>
-    <h4>AVIATION...AND ALL  THE FIELDS WHERE WE ARE</h4>
+    <br><br><br><br><br><br><br><br>
+    <h4 id="fields">AVIATION...AND ALL  THE FIELDS WHERE WE ARE</h4>
     <br><br><br><br>
     
-        <div id="helicopters">
+        <div id="future">
        
        <h3>HELICOPTERS</h3>
        <br>
             
-    <img src="https://cdn.pixabay.com/photo/2019/07/30/10/52/helicopter-4372671__340.jpg" alt="helicopter apache" width="400px"> <br>
-            <img src="https://cdn.pixabay.com/photo/2016/08/06/14/59/aircraft-1574522__340.jpg" alt="helicoptere" width="400px">
+    <img src="https://cdn.pixabay.com/photo/2019/07/30/10/52/helicopter-4372671__340.jpg" alt="helicopter apache" width="300px"> <br>
+            <img src="https://cdn.pixabay.com/photo/2016/08/06/14/59/aircraft-1574522__340.jpg" alt="helicoptere" width="300px">
     </div>
         
-        <div id="planes"> 
+        <div id="actual"> 
             <h3>PLANES AND JETS</h3>
             
         <br>
@@ -142,8 +166,8 @@
             <img src="https://cdn.pixabay.com/photo/2014/11/29/19/41/jet-550814__340.jpg" alt="jet" width="300px">&gt;
     </div>
    
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h3>OUR BEGINNINGS AS A COMPANY - THE LOCATION</h3>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3 id="location">OUR BEGINNINGS AS A COMPANY - THE LOCATION</h3>
 
     <br><br><br><br>  <br><br><br><br> 
    <div id="textmap">This company is based in the city of Cádiz, located in southern Spain.<br> It is an ideal area to lay the foundation for the company since companies like Aribus are located in the same industrial estate and with which we share common development projects.</div>
@@ -151,7 +175,9 @@
    
     <div id="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.683934052483!2d-6.265981806886813!3d36.65117989213986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0ddae677c3916f%3A0x48c0d9c7722ece93!2zUG9sLiBJbmQuIEJhaMOtYSBkZSBDw6FkaXosIDExNTAwLCBDw6FkaXo!5e0!3m2!1ses!2ses!4v1587764682078!5m2!1ses!2ses" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+
 </body>
 </html>
