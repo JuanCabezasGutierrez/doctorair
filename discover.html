@@ -5,7 +5,7 @@
 
         <style>
             body{
-            background-image:url("https://cdn.pixabay.com/photo/2016/07/20/08/01/balloon-1529816_960_720.jpg");
+            background-image:url("https://cdn.pixabay.com/photo/2016/11/29/01/54/wood-1866667__340.jpg");
                 background-size:115% 115%;
                 background-attachment:fixed;
                  font-family:sans-serif;
@@ -67,10 +67,50 @@
                 margin-left:2%;
                 
            }    
+           .nav {
+               position: absolute;
              
-        </style>
-     <div id="goto"><a href="https://juancabezasgutierrez.github.io/doctorair/room.html">Go back</a></div>
-<br>
+            }
+           .index {
+               float:left;
+            }
+           .link {
+               display: block;
+               padding: 12px;
+               background: white;
+               color: blue;
+               text-decoration:none;
+           }
+           .link:hover, .select {
+               background: blue;
+               color: white;
+    }
+        
+       </style>  
+    
+       <script>
+       var Menu = document.getElementById("index");
+       var nav = document.getElementById("nav");
+
+       Menu.addEventListener("click",function(){
+         nav.classList.toggle("aparecer");
+       });
+          
+     </script>
+              
+    <nav class="nav">
+          <table>
+           <tbody><tr class="index">
+             <td><a href="room.html" class="link ">Main page</a></td>
+             <td><a href="discover.html " class="link ">Discover us</a></td>
+             <td><a href="fields.html" class="link">Fields</a></td>
+             <td><a href="location.html" class="link select">Location</a></td>
+           </tr>
+          </tbody></table>
+        </nav>
+    
+            
+            
     
     <div id="fightervideo">
     <iframe width="200%" height="35%" src="https://www.youtube.com/embed/KnrRhSLZ0s8?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
@@ -98,6 +138,7 @@
         <p>We are a group of engineers and product developers with experience in large aviation companies such as Lockheed Martin, Airbus or Dassault with a common porpose in all of our  minds.</p><p> In these companies we have gathered the experience and knowledge necessary to develop what was our objective from the first moment, the construction of the most efficient aircraft in the world. </p><hr></div>    
     <br><br><br>
        
+
 
 
 
