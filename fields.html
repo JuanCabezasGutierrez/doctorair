@@ -6,7 +6,7 @@
         <style>
             body{
                 width:100%;
-            background-image:url("https://cdn.pixabay.com/photo/2016/07/20/08/01/balloon-1529816_960_720.jpg");
+            background-image:url("https://cdn.pixabay.com/photo/2016/11/29/01/54/wood-1866667_960_720.jpg");
                 background-size:100% 100%;
                 background-attachment:fixed;
                 font-family:sans-serif; 
@@ -37,35 +37,53 @@
                 border:dashed;
                 
             }
-            #index{
-                text-color:blue;
-                float:left;
-                
-                margin-left:10%;
-                text-size:28px;
+        
+            .nav {
+               position: absolute;
+             
             }
-            #goto{
-                font-size:22px;
-                float:left;
-                margin-left:2%;
-                
+           .index {
+               float:left;
+            }
+           .link {
+               display: block;
+               padding: 12px;
+               background: transparent;
+               color: white;
+               text-decoration:none;
            }
-            
-      
-               
-           </style>
-    <div id="goto"><a href="https://juancabezasgutierrez.github.io/doctorair/room.html">Go back</a></div>
+           .link:hover, .select {
+               background: grey;
+               color: white;
+    }
+        
+       </style>  
+    
+       <script>
+       var Menu = document.getElementById("index");
+       var nav = document.getElementById("nav");
+
+       Menu.addEventListener("click",function(){
+         nav.classList.toggle("aparecer");
+       });
+          
+     </script>
+              
+    <nav class="nav">
+          <table>
+           <tbody><tr class="index">
+             <td><a href="room.html" class="link ">Main page</a></td>
+             <td><a href="discover.html " class="link">Discover us</a></td>
+             <td><a href="fields.html" class="link select">Fields</a></td>
+             <td><a href="location.html" class="link">Location</a></td>
+           </tr>
+          </tbody></table><hr>
+        </nav> 
+     
 <br>
     <h1>AVIATION...AND ALL  THE FIELDS WHERE WE ARE</h1>
-    
-    <div id="index"><ol>
-        <li><a href="#rockets">Rockets.</a></li>
-        <li><a href="#Planes">Planes ans jets.</a></li>
-        </ol></div>
-    
-    <br><br><br>
-       
-    <h2 id="rockets"><em>ROCKETS</em></h2>
+   
+    <h2><em>ROCKETS</em></h2>
        <br>
         <div id="margins">
            
@@ -75,7 +93,7 @@
       
     <br><br>
     
-    <h2 id="Planes"><em>PLANES AND JETS</em></h2>
+    <h2><em>PLANES AND JETS</em></h2>
           
         <br>
     <div id="margins">
@@ -83,7 +101,9 @@
             
      <img class="planes" src="https://cdn.pixabay.com/photo/2014/11/29/19/41/jet-550814__340.jpg" alt="jet" width="17%"></div>
     
+
+</body></html>
        
        
 
-</body></html>
+
