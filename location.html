@@ -37,48 +37,51 @@
                 float:left;
                 margin-left:2%;
                
- }
-              .nav {
-                 position: absolute;
-                 top: 85px;
-                 right: 90%;
-                 width: 100%;
-                 transition: 0.4s;
-    }
+            }
+           .nav {
+              position: absolute;
              
-             .menu__link {
-                 display: block;
-                 padding: 15px;
-                 background: white;
-                 text-decoration: none;
-                 color: blue;
+            }
+           .index {
+              float:left;
+              text-decoration: none;
+              padding: 0;
+              margin: 0;
+            }
+           .link {
+             display: block;
+             padding: 12px;
+             background: white;
+             text-decoration: none;
+             color: blue;
+           }
+          .link:hover, .select {
+             background: blue;
+             color: white;
     }
-            
+        
        </style>  
     
- <script>
+       <script>
        var Menu = document.getElementById("menu");
        var nav = document.getElementById("nav");
 
        Menu.addEventListener("click",function(){
          nav.classList.toggle("aparecer");
        });
+          
      </script>
-
-        
-            
-            
- 
-         
-     <nav class="nav" id="nav">
-          <ul class="menu">
-            <li class="menu__item"><a href="room.html" class="menu__link ">Main page.</a></li>
-            <li class="menu__item"><a href=".html" class="menu__link">Discover us.</a></li>
-            <li class="menu__item"><a href="fields.html" class="menu__link select">Our fields..</a></li>
-            <li class="menu__item"><a href="localizacion.html" class="menu__link">Our location.</a></li>
-          </ul>
+              
+    <nav class="nav">
+          <table>
+           <tbody><tr class="index">
+             <td><a href="room.html" class="link ">Main page</a></td>
+             <td><a href="discover.html " class="link ">Discover us</a></td>
+             <td><a href="fields.html" class="link">Fields</a></td>
+             <td><a href="location.html" class="link select">Location</a></td>
+           </tr>
+          </tbody></table>
         </nav>
-    
     
     
 <br><br>
@@ -93,12 +96,6 @@
     
      <br><br><br><br><br><br><br><br><br><br>
      
-    
-      
-
-
-
-
-
+   
 
 </body></html>
